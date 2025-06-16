@@ -1,0 +1,62 @@
+<!--
+Name: Mengly Lim
+Course: COMP 4610 GUI I
+Assignment: HW4 - Part 2: Multiplication Table with jQuery UI Sliders and Tabs
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiplication Table with Sliders and Tabs</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- jQuery and jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Multiplication Table Generator (HW4 Part 2)</h1>
+
+    <form id="mult-form" novalidate>
+      <div class="slider-container">
+        <label for="startCol">Start Column:</label>
+        <input type="text" id="startCol" name="startCol" />
+        <div id="startCol-slider"></div>
+      </div>
+
+      <div class="slider-container">
+        <label for="endCol">End Column:</label>
+        <input type="text" id="endCol" name="endCol" />
+        <div id="endCol-slider"></div>
+      </div>
+
+      <div class="slider-container">
+        <label for="startRow">Start Row:</label>
+        <input type="text" id="startRow" name="startRow" />
+        <div id="startRow-slider"></div>
+      </div>
+
+      <div class="slider-container">
+        <label for="endRow">End Row:</label>
+        <input type="text" id="endRow" name="endRow" />
+        <div id="endRow-slider"></div>
+      </div>
+
+      <button type="submit">Generate Table</button>
+      <button type="button" onclick="clearTable()">Clear Table</button>
+    </form>
+
+    <div id="error-message"></div>
+    <div id="tabs">
+      <ul></ul>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

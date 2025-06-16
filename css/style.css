@@ -1,0 +1,78 @@
+/*
+Name: Mengly Lim
+Course: COMP 4610 GUI I
+Assignment: HW4 - Part 2: Styling for Sliders and Tabs
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  .slider-container {
+    margin-bottom: 15px;
+  }
+  
+  #table-container table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  #table-container th, #table-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #table-container th {
+    background-color: #f0f0f0;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .ui-tabs .ui-tabs-nav li a {
+    padding-right: 1.5em;
+  }
+  
+  .ui-icon-close {
+    margin-left: 0.5em;
+    cursor: pointer;
+  }
